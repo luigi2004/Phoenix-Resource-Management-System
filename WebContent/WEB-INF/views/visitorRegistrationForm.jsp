@@ -106,13 +106,7 @@
 	</section>
 	
 	<script>
-		$('#option1:checked').parent().css('backgroundColor', '#FF6347');
-		$('#option2:checked').parent().css('backgroundColor', '#FF6347');
-		$('#option3:checked').parent().css('backgroundColor', '#FF6347');
-		$('input[name="visitorCompanyName"]').change(function(){
-			$('.radio_label').css('backgroundColor', '#004837');
-			$(this).parent().css('backgroundColor', '#FF6347');
-		});
+		
 	    
 		$('#other').hide();
 		$('#submit_btn').hide();
