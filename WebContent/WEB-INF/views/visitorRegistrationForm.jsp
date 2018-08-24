@@ -3,6 +3,11 @@
 	<!DOCTYPE html>
 <html>
 <head>
+
+<style type="text/css">
+   body { background: lightblue !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+
 	<title>Register Now!</title>
 	<link rel="stylesheet" href="../resources/fontawesome/css/all.css">
 	<script src="../resources/js/jquery.min.js"></script>
@@ -14,91 +19,89 @@
 	
 </head>
 
+
 <body class="container"  onload="startTime()">
-	<header class="text-center">
-		
-		 <div class="ml15 pull-center">
-				  
-				  <h1>
-					  <span class="word">W </span> 
-					  <span class="word">e </span> 
-					  <span class="word">l </span>
-					  <span class="word">c </span>
-					  <span class="word">o </span>
-					  <span class="word">m </span>
-					  <span class="word welcome">e </span>
-					  <span class="word to">To </span>
-					  <span class="word ">P </span> 
-					  <span class="word ">h </span>
-					  <span class="word ">o </span>
-					  <span class="word state">e </span>
-					  <span class="word ">n </span>
-					  <span class="word ">i </span>
-					  <span class="word ">x</span>
-					  
-					  <span id="timer" class="pull-right">
-				  	  	
-				 	  </span>
-				  </h1>
-				  
-				  <p class="word logo pull-center">
-				  	<img src="../resources/images/logo.png"/> 
-				  </p>
-				  
-				</div>
-		 <div id="next_prev_btn">
-			 	
-			 	<a href="/Phoenix_Resource_Management_System/Visitor/Home" class="pull-left"  >
-			 		<span class="fas fa-arrow-alt-circle-left  fa-4x text-center fa_left_btn"></span>
-			 	</a>
-			 		
-				<a onclick= "submitForm()" class="pull-right" >
-			 		<span class="fas fa-arrow-alt-circle-right fa_right_btn  fa-4x text-center"></span>
-			 	</a>
-			 			 
-		 	</div>
-		
-	</header>
-	
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1 class="text-center">
+					Welcome To Phoenix!
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
 	<section id="visitor_form_section" >
 		<form id="registration_form" action ="RegisterVisitor" method="post">
-			<div class="form-group">
-				<input type="text" class="form-control text-center input-lg" name="visitorFirstName" placeholder="First Name" required/>
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control text-center input-lg" name="visitorLastName" placeholder="Last Name" required/>
-			</div>
-			<div class="form-group">
-				<input type="email" class="form-control text-center input-lg" name="visitorEmail" placeholder="Email"/>
-			</div>
-			<div class="form-group">
-				<input type="tel" class="form-control text-center input-lg" name="visitorPhone" placeholder="Phone" required/>
-			</div>
-			<div class="form-group">
-				<input type="text" class="form-control text-center input-lg" name="visitorVisitingName" placeholder="Host"/>
-			</div>
-			<div class="form-group">
-				<textarea  class=" form_text_area form-control" rows="2" name="visitorVisitPurpose" placeholder="Reason for visit" required></textarea>
-			</div>
 			
-			<h4>Company</h4>
-			<div class="btn-group btn-group-toggle data-toggle well well-lg" >
-		
-				<label class="btn btn-primary radio-inline radio_label input-lg">
-					<input type="radio" name="visitorCompanyName" id="option1" value="Syntel" checked>
-					Syntel
-				</label>
-				<label class="btn btn-primary radio-inline radio_label input-lg">
-					<input type="radio" name="visitorCompanyName" id="option2" value="AmericanExpress">
-					American Express
-				</label>
-				<label class="btn btn-primary radio-inline radio_label input-lg">
-					<input type="radio" name="visitorCompanyName" id="option3" value="Other">
-					Other
-				   <input type="text" class="form-control" id="otherCompanyName" name="otherCompanyName" placeholder="Enter Company">
-					
-				</label>
-			</div>
+			<!-- MY STUFF -->
+
+<div class="form-group">
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-4">
+		<input type="text" class="form-control text-center input-lg" name="visitorFirstName" placeholder="First Name" required/>
+		</div>
+		<div class="col-md-4">
+		<input type="text" class="form-control text-center input-lg" name="visitorLastName" placeholder="Last Name" required/>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-4">
+		<input type="email" class="form-control text-center input-lg" name="visitorEmail" placeholder="Email"/>
+		</div>
+		<div class="col-md-4">
+		<input type="tel" class="form-control text-center input-lg" name="visitorPhone" placeholder="Phone" required/>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-4">
+		<input type="text" class="form-control text-center input-lg" name="visitorVisitingName" placeholder="Host"/>
+		</div>
+		<div class="col-md-4">
+		<input type="text" class="form-control text-center input-lg" name="visitorCompanyName" placeholder="Company"/>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8">
+		<textarea  class=" form_text_area form-control" rows="2" name="visitorVisitPurpose" placeholder="Reason for visit" required></textarea>
+		</div>
+		<div class="col-md-2">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1 col-md-offset-2 col-lg-1 col-lg-offset-2">
+			 
+			<button type="button" class="btn-lg btn-danger btn pull-left">
+				Cancel
+			</button>
+		</div>
+		<div class="col-md-1 col-md-offset-6 col-lg-1 col-lg-offset-6">
+			 
+			<button type="button" class="btn-lg btn-success btn pull-right">
+				 Next 
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- END OF MY STUFF -->
+
 			
 			<input type="submit" id="submit_btn" >
 			
@@ -106,13 +109,7 @@
 	</section>
 	
 	<script>
-		$('#option1:checked').parent().css('backgroundColor', '#FF6347');
-		$('#option2:checked').parent().css('backgroundColor', '#FF6347');
-		$('#option3:checked').parent().css('backgroundColor', '#FF6347');
-		$('input[name="visitorCompanyName"]').change(function(){
-			$('.radio_label').css('backgroundColor', '#004837');
-			$(this).parent().css('backgroundColor', '#FF6347');
-		});
+		
 	    
 		$('#other').hide();
 		$('#submit_btn').hide();
@@ -152,5 +149,7 @@
 		    return i;
 		}
 	</script>
+	
+	
 </body>
 </html>

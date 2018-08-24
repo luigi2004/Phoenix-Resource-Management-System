@@ -11,15 +11,18 @@ section{
 
 
 .radio_label{
-	background-color: #004837;
+	background-color: gray;
 	margin-right: 30px;
 }
 
 .radio_label:hover{
-	background-color: #e85200;
+	background-color: green;
 }
 
 .radio_label input[type="radio"]:checked{
-	background-color: white;
+	background-color: green;
 }
 	
+.body{
+	background-color: lightblue;
+}
