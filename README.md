@@ -1,4 +1,4 @@
-Alt-Phoenix-Resource-Management-System
+Syntel-Resource-Management-System
 =======================================
 ## Syntel Training Class Project
 ***
